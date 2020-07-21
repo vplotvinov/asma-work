@@ -22,8 +22,6 @@ flex-direction: row;
 	padding-left: 48px;
 	width:220px;
 	flex-shrink: 0;	
-
-	
 }
 .sidebar{
 	display: flex;
@@ -135,17 +133,36 @@ font-weight:normal;
 			
 		}
 		.firstblock-text{
+			width:600px;
+			display:flex;
+			flex-direction:column;
+			flex-wrap:nowrap;
 			padding-right 0
-			
 			padding-bottom 31px;
-			font-family: Open Sans;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 16px;
-			line-height: 24px;
-			letter-spacing: 0.2px;
 
 		}
+		.text-int{
+			
+			font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: rgba(0, 0, 0, 0.9);
+		&__point{
+			font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.2px;
+			border:none;
+			outline:none;
+		}
+
+		}
+		
 		.gif-block{
 			margin-bottom:34px;
 			flex-direction:row;
@@ -207,12 +224,22 @@ flex-direction:row;
 			width:700px;
 		}
 		.profiletitle{
-				padding-top:10px;
-				margin-left:8px;
+			display:flex;
+			justify-content:row;
+				
 			&-image-circle{
-				border-radius: 100%
+				background: rgba(15, 17, 156, 0.5);
+				margin-left:24px;
+				margin-top:20px;
+				margin-right:8px;
+				background-image: url('C:/Users/User/Desktop/workp/img/monica.svg');
+				border-radius: 100%;
+				width:48px;
+				height: 53px;
+				background-size: contain;
 			}
 			&-name{
+				margin-top:36px;
 				font-family: Open Sans;
 				font-style: normal;
 				font-weight: 600;
@@ -235,7 +262,9 @@ flex-direction:row;
 				color: rgba(0, 0, 0, 0.9)
 			&-1st{
 				font-weight: 600;	
-				
+				&-normal{
+					font-weight:normal;
+				}
 				&-link{
 					text-decoration none
 					color:#03AFFF;
@@ -339,6 +368,7 @@ letter-spacing: 0.4px;
 color: rgba(0, 0, 0, 0.32);
 }
 .option{
+	background-image:url('C:/Users/User/Desktop/workp/img/opt.svg');
 	margin-right:20px;
 	margin-top:26px;
 	width:16px;

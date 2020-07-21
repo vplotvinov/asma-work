@@ -110,14 +110,31 @@
   padding-left: 24px;
 }
 .firstblock-text {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   padding-right: 0;
   padding-bottom: 31px;
+}
+.text-int {
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.2px;
+  color: rgba(0,0,0,0.9);
+}
+.text-int__point {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  border: none;
+  outline: none;
 }
 .gif-block {
   margin-bottom: 34px;
@@ -178,13 +195,22 @@
   width: 700px;
 }
 .profiletitle {
-  padding-top: 10px;
-  margin-left: 8px;
+  display: flex;
+  justify-content: row;
 }
 .profiletitle-image-circle {
+  background: rgba(15,17,156,0.5);
+  margin-left: 24px;
+  margin-top: 20px;
+  margin-right: 8px;
+  background-image: url("C:/Users/User/Desktop/workp/img/monica.svg");
   border-radius: 100%;
+  width: 48px;
+  height: 53px;
+  background-size: contain;
 }
 .profiletitle-name {
+  margin-top: 36px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: 600;
@@ -206,6 +232,9 @@
 }
 .second-block-text-1st {
   font-weight: 600;
+}
+.second-block-text-1st-normal {
+  font-weight: normal;
 }
 .second-block-text-1st-link {
   text-decoration: none;
@@ -304,6 +333,7 @@
   color: rgba(0,0,0,0.32);
 }
 .option {
+  background-image: url("C:/Users/User/Desktop/workp/img/opt.svg");
   margin-right: 20px;
   margin-top: 26px;
   width: 16px;
